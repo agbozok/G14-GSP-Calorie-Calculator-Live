@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Calculator</title>
+    <h1>Product of Group 14: Robert, Lydia, Diamond, Kekeli</h1>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calorie Calculator</h1>
+        <form id="calorie-form">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" name="weight" required>
+
+            <label for="heart-rate">Heart Rate Post Activity (bpm):</label>
+            <input type="number" id="heart-rate" name="heart-rate" required>
+
+            <label for="resting-heart-rate">Resting Heart Rate (bpm):</label>
+            <input type="number" id="resting-heart-rate" name="resting-heart-rate" placeholder="Default is 70">
+
+            <label for="activity">Activity:</label>
+            <select id="activity" name="activity" required>
+                <option value="light">Walking/Light Activities (0.0001–0.0005)</option>
+                <option value="jogging">Jogging (0.0005–0.002)</option>
+                <option value="sprinting">Sprinting (0.002–0.005)</option>
+                <option value="cycling">Cycling (0.002–0.005)</option>
+            </select>
+
+            <label for="duration">Duration (minutes):</label>
+            <input type="number" id="duration" name="duration" required>
+
+            <button type="button" id="calculate-button">Calculate</button>
+        </form>
+
+        <div id="result" class="result">
+            <h2>Results</h2>
+            <p id="calories-per-minute"></p>
+            <p id="total-calories"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
